@@ -10,6 +10,7 @@
 *.lck
 *.prefs
 *.lock
+*.iml
 src/test
 logs
 target
