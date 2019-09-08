@@ -18,3 +18,5 @@ target
 data/
 .idea/
 .DS_Store
+
+out/
