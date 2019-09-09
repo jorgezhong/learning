@@ -1,11 +1,12 @@
 package com.jorgezhong.thread.t2;
 
 import java.util.Timer;
+import java.util.TimerTask;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
-public class Demo1 {
+public class ThreadDemo {
 
 
     /**
@@ -149,6 +150,13 @@ public class Demo1 {
 
         Timer timer = new Timer();
 
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                //实现定时任务
+                System.out.println("timerTask is running ... ");
+            }
+        },0,1000);
 
 
     }
@@ -165,6 +173,7 @@ public class Demo1 {
 
 //        callableThreadDemo();
 
+        timerDemo();
 
     }
 }
