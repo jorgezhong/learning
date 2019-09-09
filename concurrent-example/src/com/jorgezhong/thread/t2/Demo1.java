@@ -1,5 +1,6 @@
 package com.jorgezhong.thread.t2;
 
+import java.util.Timer;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
@@ -144,6 +145,14 @@ public class Demo1 {
 
     }
 
+    private static void timerDemo() {
+
+        Timer timer = new Timer();
+
+
+
+    }
+
     public static void main(String[] args) {
 //        threadNameDemo();
 //        threadGroupDemo();
@@ -154,7 +163,7 @@ public class Demo1 {
 //        anonymousThreadInnerClassThreadDemo();
 //        anonymousRunnableInnerClassThreadDemo();
 
-        callableThreadDemo();
+//        callableThreadDemo();
 
 
     }
