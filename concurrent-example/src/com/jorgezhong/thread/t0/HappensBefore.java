@@ -19,23 +19,23 @@ import java.util.concurrent.locks.ReentrantLock;
  * - 8.对象终结规则：一个对象的初始化完成先行发生于他的finalize()方法的开始；
  * <p>
  * a happens-before b ：表示A的操作一定是对B的操作是可见的
- *
+ * <p>
  * 上面八条是原生Java满足Happens-before关系的规则，但是我们可以对他们进行推导出其他满足happens-before的规则：
- *
+ * <p>
  * 将一个元素放入一个线程安全的队列的操作Happens-Before从队列中取出这个元素的操作
  * 将一个元素放入一个线程安全容器的操作Happens-Before从容器中取出这个元素的操作
  * 在CountDownLatch上的倒数操作Happens-Before CountDownLatch#await()操作
  * 释放Semaphore许可的操作Happens-Before获得许可操作
  * Future表示的任务的所有操作Happens-Before Future#get()操作
  * 向Executor提交一个Runnable或Callable的操作Happens-Before任务开始执行操作
- *
- *
  */
 public class HappensBefore {
 
     public static void main(String[] args) {
+// TODO: 2019/9/10
 
     }
+
 
 }
 
@@ -65,9 +65,9 @@ class HappensBeforeDemo1 {
 
 /**
  * 监视器锁规则
- *  - 对一个锁的解锁，总是happens-before于随后对这个锁的加锁
- *
- *  示例：操作1 happens-before 操作2
+ * - 对一个锁的解锁，总是happens-before于随后对这个锁的加锁
+ * <p>
+ * 示例：操作1 happens-before 操作2
  */
 class HappensBeforeDemo2 {
     private Lock lock = new ReentrantLock();
@@ -87,9 +87,9 @@ class HappensBeforeDemo2 {
 
 /**
  * Start规则
- *  - 对于一个线程A启动另一个线程B的线程方法 那么线程A的所有代码 happens-before B 线程
- *
- *  示例：1 happens-before 2
+ * - 对于一个线程A启动另一个线程B的线程方法 那么线程A的所有代码 happens-before B 线程
+ * <p>
+ * 示例：1 happens-before 2
  */
 class HappensBeforeDemo3 {
 
