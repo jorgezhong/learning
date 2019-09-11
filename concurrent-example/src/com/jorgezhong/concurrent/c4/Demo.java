@@ -5,7 +5,7 @@ package com.jorgezhong.concurrent.c4;
  *         由于是同一个锁对象，也是可以进行访问的，而不是因为锁已经被获取过了，无法再次获取，理解为锁重入
  *         （一个线程内部反复使用同一个锁对象时）
  *
- * 重入锁：synchronized Lock都是重入锁
+ * 重入锁：synchronized ReentrantLock都是重入锁
  * Project <learning>
  * Created by jorgezhong on 2019/9/10 20:39.
  */
