@@ -18,3 +18,7 @@ target
 data/
 .idea/
 .DS_Store
+mvnw
+*.cmd
+out
+.mvn/
