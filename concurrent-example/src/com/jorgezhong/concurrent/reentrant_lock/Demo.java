@@ -1,4 +1,4 @@
-package com.jorgezhong.concurrent.c4;
+package com.jorgezhong.concurrent.reentrant_lock;
 
 /**
  * 锁重入： 当两个方法都使用了同一个锁对象，当一个方法调用另一个方法时，

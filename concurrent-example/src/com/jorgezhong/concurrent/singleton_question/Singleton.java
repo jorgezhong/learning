@@ -1,4 +1,4 @@
-package com.jorgezhong.concurrent.c3;
+package com.jorgezhong.concurrent.singleton_question;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

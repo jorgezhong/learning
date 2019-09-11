@@ -1,4 +1,4 @@
-package com.jorgezhong.concurrent.c5;
+package com.jorgezhong.concurrent.volatile_;
 
 /**
  * volatile可见性示例

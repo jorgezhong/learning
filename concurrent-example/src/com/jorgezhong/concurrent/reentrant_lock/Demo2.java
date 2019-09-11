@@ -1,4 +1,4 @@
-package com.jorgezhong.concurrent.c4;
+package com.jorgezhong.concurrent.reentrant_lock;
 
 import java.util.Random;
 

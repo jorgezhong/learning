@@ -1,4 +1,4 @@
-package com.jorgezhong.concurrent.c1;
+package com.jorgezhong.concurrent.question;
 
 /**
  * 线程安全问题

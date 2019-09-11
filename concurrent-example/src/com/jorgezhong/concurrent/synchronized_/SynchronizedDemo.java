@@ -1,4 +1,4 @@
-package com.jorgezhong.concurrent.c2;
+package com.jorgezhong.concurrent.synchronized_;
 
 /**
  * 内置锁
