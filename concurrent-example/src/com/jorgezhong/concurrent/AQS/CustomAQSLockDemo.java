@@ -34,7 +34,7 @@ package com.jorgezhong.concurrent.AQS;
  * Project <learning>
  * Created by jorgezhong on 2019/9/11 16:39.
  */
-public class Demo {
+public class CustomAQSLockDemo {
 
     private int value;
 
@@ -73,18 +73,18 @@ public class Demo {
     }
 
     private static void reentrantCustomLockTest() {
-        Demo demo = new Demo();
-        Runnable runnable = demo::a;
+        CustomAQSLockDemo customAQSLockDemo = new CustomAQSLockDemo();
+        Runnable runnable = customAQSLockDemo::a;
 
         new Thread(runnable).start();
     }
 
     private static void customAQSLockTest() {
-        Demo demo = new Demo();
+        CustomAQSLockDemo customAQSLockDemo = new CustomAQSLockDemo();
 
         Runnable runnable = () -> {
             while (true) {
-                System.out.println(Thread.currentThread().getId() + ":" + demo.next());
+                System.out.println(Thread.currentThread().getId() + ":" + customAQSLockDemo.next());
             }
 
         };
