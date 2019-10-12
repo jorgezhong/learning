@@ -22,3 +22,7 @@ mvnw
 *.cmd
 out
 .mvn/
+.gradle/
+gradle/
+/netty_lecture/gradlew
+/netty_lecture/gradlew.bat
