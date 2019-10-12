@@ -24,5 +24,6 @@ out
 .mvn/
 .gradle/
 gradle/
+build/
 /netty_lecture/gradlew
 /netty_lecture/gradlew.bat
