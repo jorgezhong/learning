@@ -53,6 +53,9 @@ public class AddTwoNumber {
      *  边界条件：l1 和 l2 不为空
      *
      *
+     * 时间复杂度：O(n)  - 遍历一次
+     * 空间复杂度：O(n)  - new 一次对象
+     *
      * 补充知识：取模和取余
      *      通常取模运算也叫取余运算，它们返回结果都是余数，符号相同时，两者不会冲突。
      *      - 取余，遵循尽可能让商向0靠近的原则
@@ -70,7 +73,7 @@ public class AddTwoNumber {
         ListNode dummy = new ListNode(0);
         ListNode p1 = l1, p2 = l2;
         int sum = 0;
-        ListNode cur = dummy;  //?
+        ListNode cur = dummy;
         while (p1 != null || p2 != null) {
 
             if (p1 !=null) {
@@ -88,7 +91,7 @@ public class AddTwoNumber {
             sum /= 10;
             cur = cur.next;
         }
-
+        //最后一位相加的结果可能会进1，单独处理
         if (sum == 1) {
             cur.next = new ListNode(1);
         }
