@@ -1,4 +1,4 @@
-package com.jorgezhong.netty.example;
+package com.jorgezhong.netty.example.http;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
