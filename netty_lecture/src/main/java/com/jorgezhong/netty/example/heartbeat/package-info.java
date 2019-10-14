@@ -1,4 +1,5 @@
 /**
+ * 4.
  * 心跳：使用IdleStateEvent监测IdleState事件
  *  - READER_IDLE（读空闲）：客户端一定时间内未发送数据到服务端，服务端触发该事件
  *  - WRITER_IDLE（写空闲）：服务端一定事件内未发送数据到客户端，服务端触发该事件
