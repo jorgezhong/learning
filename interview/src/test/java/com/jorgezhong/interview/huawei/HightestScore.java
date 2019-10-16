@@ -56,22 +56,20 @@ public class HightestScore {
         Scanner scanner = new Scanner(System.in);
 
         do {
-            int[] nm = new int[2];
-            nm[0] = scanner.nextInt();
-            nm[1] = scanner.nextInt();
+            int n = scanner.nextInt();
+            int m = scanner.nextInt();
             ArrayList<Integer> score = new ArrayList<>();
             ArrayList<Integer> result = new ArrayList<>();
-            for (int i = 0; i < nm[0]; i++) {
+            for (int i = 0; i < n; i++) {
                 score.add(scanner.nextInt());
             }
             char a;
             int b, c;
-            for (int i = 0; i < nm[1]; i++) {
+            for (int i = 0; i < m; i++) {
 
                 a = scanner.next().charAt(0);
                 b = scanner.nextInt();
                 c = scanner.nextInt();
-
 
                 if ('Q' == a) {
                     if (b >= c) {
