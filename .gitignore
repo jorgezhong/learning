@@ -22,3 +22,9 @@ mvnw
 *.cmd
 out
 .mvn/
+.gradle/
+gradle/
+test/
+build/
+gradlew
+gradlew.bat
