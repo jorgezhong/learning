@@ -9,6 +9,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 repositories {
+    maven { url 'https://maven.aliyun.com/repository/public/' }
     mavenCentral()
 }
 
@@ -17,6 +18,7 @@ dependencies {
     compile 'io.netty:netty-all:4.1.42.Final'
     compile group: 'com.google.protobuf', name: 'protobuf-java', version: '3.9.2'
     compile group: 'com.google.protobuf', name: 'protobuf-java-util', version: '3.9.2'
+    testCompile group: 'org.javamoney', name: 'moneta', version: '1.3'
 
 }
 
