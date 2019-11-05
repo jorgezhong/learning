@@ -17,3 +17,10 @@ target
 data/
 .idea/
 .DS_Store
+.gradle/
+gradle/
+gradlew
+gradlew.bat
+*.iml
+out/
+build/
